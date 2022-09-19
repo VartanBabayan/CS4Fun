@@ -39,9 +39,9 @@ void newtonMethod(double a, double b, double eps,
 
 int main()
 {
-    auto f = [](double x) { return (pow(x, 3) - 3 * x + 1); };  // f(x)
-    auto f1 = [](double x) { return (3 * pow(x, 2) - 3); };     // f'(x) - 1s derivative
-    auto f2 = [](double x) { return 6 * x; };                   // f''(x) - 2nd derivative
+    auto f  =  [](double x) { return (pow(x, 3) - 3 * x + 1); };  // f(x)
+    auto f1 =  [](double x) { return (3 * pow(x, 2) - 3); };      // f'(x) - 1st derivative
+    auto f2 =  [](double x) { return 6 * x; };                    // f''(x) - 2nd derivative
 
     newtonMethod(0, 1, 0.001, f, f1, f2);
 }
