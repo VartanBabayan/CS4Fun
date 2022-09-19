@@ -5,7 +5,7 @@
 void bisectionMethod(double a, double b, double eps, std::function<double(double)> f)
 {
   if (f(a) * f(b) >= 0)
-    std::cout << "There is not root in the interval: " << a << "\t" << b << "\n";
+    std::cout << "There is no root in the interval: " << a << "\t" << b << "\n";
 
   int i = 0;
   double x = 0.0;
