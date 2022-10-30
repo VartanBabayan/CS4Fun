@@ -2,7 +2,7 @@
 #include <functional>
 #include <cmath>
 
-void secantMethod(double a, double b, double eps, 
+void secantMethod(double a, double b, double eps,
 									std::function<double(double)> f,
 									std::function<double(double)> f1,
 									std::function<double(double)> f2)

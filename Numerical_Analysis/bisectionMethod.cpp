@@ -2,8 +2,7 @@
 #include <cmath>
 #include <functional>
 
-void bisectionMethod(double a, double b, double eps, 
-										 std::function<double(double)> f)
+void bisectionMethod(double a, double b, double eps, std::function<double(double)> f)
 {
   if (f(a) * f(b) >= 0)
     std::cout << "There is no root in the interval: " << a << "\t" << b << "\n";
